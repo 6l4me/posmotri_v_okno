@@ -221,6 +221,8 @@ li.content__list-item:not(:last-of-type) {
 }
 
 .title {
+  position: fixed;
+  top: 65px;
   font-family: 'Oswald';
   font-weight: 700;
   font-size: 75px;
