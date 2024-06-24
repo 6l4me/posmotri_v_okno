@@ -36,3 +36,245 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  padding: 133px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1140px;
+  gap: 30px;
+}
+
+.result__video-container {
+  min-width: 711px;
+  min-height: 386px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.search-form__fieldset {
+  border: none;
+  min-width: 212px;
+}
+
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  padding: 4px 0;
+}
+
+.search-form__label {
+  width: fit-content;
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+  
+}
+
+input[type='checkbox']:checked + span {
+  background-color: #fff;
+  padding: 1px;
+  border: 1px solid #000;
+  outline: 1px solid #fff;
+}
+
+.search-form__label:has(.search-form__label-text):hover {
+  text-decoration: underline;
+}
+
+.search-form__label:not(:first-of-type) {
+  padding-left: 10px;
+}
+
+.search-form__textfield {
+  font-family: 'Fira Sans Condensed';
+  min-width: 225px;
+  min-height: 27px;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  appearance: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.content__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin: 3px;
+}
+
+.content__card-link_current:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.content__card-link_current:hover {
+  text-decoration: underline;
+}
+
+.content__card-link_current:focus {
+  outline: none;
+} 
+
+.content__card-link_current:focus-visible {
+  outline: 1px solid #fff;
+}
+
+li.content__list-item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 394px;
+  min-height: 107px;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+  height: 100%;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.content__video-card-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.9;
+  color: #fff;
+}
+
+.content__video-card-thumbnail {
+  max-width: 194px;
+  max-height: 103px;
+}
+
+.content__details {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title {
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 0.94;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  max-height: 298px;
+  overflow: auto;
+  margin-top: 26px;
+  position: relative;
+}
+
+.button {
+  font-family: 'Oswald';
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: #1b1919;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.button:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
+  border: none;
+}
+
+.button:focus-visible {
+  outline: 3px double #fff;
+}
+
+.search-form__submit-button {
+  margin-top: 20px;
+  padding: 6px 73.5px;
+}
+
+.more-button {
+  width: 100%;
+  padding: 6px 0;
+}
