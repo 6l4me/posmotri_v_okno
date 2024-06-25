@@ -56,6 +56,7 @@ ol {
 
 .result__video {
   object-position: center;
+  object-fit: cover;
   width: 100%;
   height: 386px;
 }
@@ -82,13 +83,21 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-  padding: 4px 0;
+  outline-offset: 1px;
 }
 
 .search-form__label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
   margin: auto 0;
   width: fit-content;
   cursor: pointer;
+}
+
+.search-form__checkbox-list {
+  display: flex;
 }
 
 input {
@@ -115,11 +124,11 @@ input {
 input[type='checkbox']:checked + span {
   background-color: #fff;
   padding: 1px;
-  border: 1px solid #000;
+  border: 1px solid #1b1919;
   outline: 1px solid #fff;
 }
 
-.search-form__label:has(.search-form__label-text):hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -164,7 +173,7 @@ input[type='checkbox']:checked + span {
 }
 
 .content__card-link:active {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #545050
 }
 
 .content__card-link:hover {
@@ -183,12 +192,15 @@ li.content__list-item:not(:last-of-type) {
   margin-bottom: 30px;
 }
 
+.content__card-link_current {
+  background-color: #545050;
+}
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   min-width: 394px;
-  min-height: 107px;
 }
 
 .content__video-card-description-container {
@@ -211,6 +223,7 @@ li.content__list-item:not(:last-of-type) {
 }
 
 .content__video-card-description {
+  max-width: 200px;
   font-weight: 400;
   font-size: 18px;
   line-height: 0.9;
@@ -226,11 +239,13 @@ li.content__list-item:not(:last-of-type) {
 
 .content__details {
   width: 100%;
-  height: 534px;
+  height: 100%;
 }
 
 .title {
   font-family: 'Oswald', sans-serif;
+  position: fixed;
+  top: 60px;
   font-weight: 700;
   font-size: 75px;
   line-height: 0.94;
@@ -262,7 +277,7 @@ li.content__list-item:not(:last-of-type) {
 }
 
 .button:active {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #545050;
 }
 
 .button:hover {
@@ -271,7 +286,6 @@ li.content__list-item:not(:last-of-type) {
 
 .button:focus {
   outline: none;
-  border: none;
 }
 
 .button:focus-visible {
