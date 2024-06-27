@@ -133,7 +133,7 @@ input[type='checkbox']:checked + span {
 }
 
 .search-form__label:not(:first-of-type) {
-  padding-left: 10px;
+  margin-left: 15px;
 }
 
 .search-form__textfield {
@@ -244,8 +244,6 @@ li.content__list-item:not(:last-of-type) {
 
 .title {
   font-family: 'Oswald', sans-serif;
-  position: fixed;
-  top: 60px;
   font-weight: 700;
   font-size: 75px;
   line-height: 0.94;
@@ -258,7 +256,7 @@ li.content__list-item:not(:last-of-type) {
 }
 
 .content__list {
-  max-height: 298px;
+  height: 298px;
   overflow: auto;
   margin-top: 26px;
   position: relative;
